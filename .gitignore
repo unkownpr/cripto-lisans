@@ -36,3 +36,6 @@ Thumbs.db
 contracts/out/
 contracts/cache/
 contracts/lib/
+
+# Playwright MCP scratch
+/.playwright-mcp/

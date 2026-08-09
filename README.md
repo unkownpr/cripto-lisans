@@ -12,6 +12,19 @@ voucher imzası) tarayıcıda MetaMask ile yapılır; sunucu yalnızca imza *do�
 
 ---
 
+## Ekran görüntüleri
+
+|  |  |
+|---|---|
+| ![Ana sayfa](docs/screenshots/03-home.png) | ![Mağaza](docs/screenshots/02-store.png) |
+| **Ana sayfa** — sahiplik anlatımı, "nasıl çalışır" | **Mağaza** — public ürün kataloğu, tek-tık satın al |
+| ![Yönetim paneli](docs/screenshots/04-admin-dashboard.png) | ![Ürün yönetimi](docs/screenshots/05-admin-products.png) |
+| **Yönetim** — genel bakış + istatistikler | **Ürünler** — ürün ekle, müşteriye lisans üret |
+| ![Ağ ve kontrat](docs/screenshots/06-admin-network.png) | ![Kurulum sihirbazı](docs/screenshots/01-install-wizard.png) |
+| **Ağ & Kontrat** — tek-tık kontrat deploy | **Kurulum** — `.env`'siz sihirbaz + kurulum kodu |
+
+---
+
 ## Özellikler
 
 - **Cüzdan girişi (SIWE)** — Sign-In With Ethereum, şifre yok.
