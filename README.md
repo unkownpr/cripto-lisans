@@ -41,9 +41,11 @@ Sunucu tarafı sertleştirmeler:
 ```bash
 git clone https://github.com/unkownpr/cripto-lisans.git
 cd cripto-lisans
-composer install
 php -S localhost:8080 -t public
 ```
+
+`vendor/` repoda gömülü — **composer'a gerek yok**. (Bağımlılıkları güncellemek
+istersen `composer install` çalıştırabilirsin.)
 
 Tarayıcıda `http://localhost:8080` → sihirbaz açılır. Kurulum kodunu
 `data/setup_token.txt`'den al, MetaMask'ı bağla, bitir.
@@ -73,10 +75,11 @@ Sihirbaz sonrası panelden düzenlenebilir: SMTP → `/admin/mail`, zincir/kontr
 
 ## Paylaşımlı hosting'e kurulum (cPanel / Plesk — composer'sız)
 
-Sunucuda `composer install` çalıştıramıyorsan:
+Sunucuda `composer install` çalıştıramıyorsan sorun yok — `vendor/` repoda gömülü:
 
-1. **`vendor/` klasörünü dahil yükle.** Yerelde `composer install` çalıştır, sonra
-   `vendor/` dahil tüm projeyi FTP/File Manager ile at. Sunucuda composer'a gerek kalmaz.
+1. **Repoyu indir + yükle.** GitHub'dan ZIP indir (*Code → Download ZIP*) ya da
+   `git clone`, sonra tüm projeyi FTP/File Manager ile at. `vendor/` içinde geldiği
+   için sunucuda composer'a gerek yok.
 2. **PHP 8.3+ seç** — cPanel: *MultiPHP Manager* · Plesk: *Hosting Settings*.
 3. **Eklentileri aç** — `gmp` + `curl` (cPanel *Select PHP Version → Extensions*).
 4. **Docroot → `public/`** — domain'i projenin `public/` klasörüne yönlendir

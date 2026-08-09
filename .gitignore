@@ -1,5 +1,6 @@
 # --- Dependencies ---
-/vendor/
+# vendor/ is committed on purpose: lets shared hosting (cPanel/Plesk) deploy
+# without running composer. Run `composer install` to regenerate it locally.
 /node_modules/
 
 # --- Secrets / environment ---
