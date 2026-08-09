@@ -1,0 +1,14 @@
+# F3 front controller — route all non-file requests to index.php
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# never serve a stray .env
+<FilesMatch "^\.env">
+    Require all denied
+</FilesMatch>

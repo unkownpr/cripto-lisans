@@ -1,0 +1,78 @@
+/* Hallmark · component: brand-kit · genre: modern-minimal (playful warmth)
+ * pre-emit critique: P5 H4 E5 S4 R5 V4
+ * DNA-source: image (Slite landing, user reference) · studied: yes
+ * Marka kiti — Kripto Lisans Paneli. Tüm renk/font/space token burada.
+ */
+:root {
+    /* --- paper / ink (warm cream + warm black) --- */
+    --color-paper:      oklch(96.6% 0.011 84);   /* warm off-white bg */
+    --color-paper-2:    oklch(99.2% 0.004 84);   /* card surface */
+    --color-paper-3:    oklch(93.8% 0.012 84);   /* hover / sunken */
+    --color-ink:        oklch(23% 0.012 62);     /* headings, primary btn */
+    --color-ink-2:      oklch(38% 0.012 66);     /* body text */
+    --color-muted:      oklch(56% 0.014 70);     /* secondary text */
+    --color-line:       oklch(89% 0.010 82);     /* hairline borders */
+
+    /* --- accent (royal blue: links, highlight, focus) --- */
+    --color-accent:     oklch(56% 0.188 258);
+    --color-accent-press: oklch(48% 0.188 258);
+    --color-accent-weak: oklch(93% 0.045 258);
+
+    /* --- pastel surfaces (Slite card headers / stat tiles) --- */
+    --color-coral:      oklch(89% 0.055 34);
+    --color-mint:       oklch(90% 0.058 156);
+    --color-sky:        oklch(90% 0.050 246);
+    --color-lilac:      oklch(90% 0.050 300);
+
+    /* --- dark section (blob / footer band) --- */
+    --color-dark:       oklch(24% 0.012 62);
+    --color-dark-2:     oklch(30% 0.012 62);
+    --color-on-dark:    oklch(95% 0.008 84);
+
+    /* --- semantic --- */
+    --color-ok:         oklch(62% 0.15 150);
+    --color-warn:       oklch(72% 0.14 75);
+    --color-danger:     oklch(58% 0.19 25);
+    --color-focus:      oklch(56% 0.188 258);
+
+    /* --- type --- */
+    --font-display: "Inter Tight", ui-sans-serif, system-ui, sans-serif;
+    --font-body:    "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-mono:    "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+    /* modular type scale */
+    --text-xs:   0.78rem;
+    --text-sm:   0.88rem;
+    --text-base: 1rem;
+    --text-lg:   1.15rem;
+    --text-xl:   1.4rem;
+    --text-2xl:  1.85rem;
+    --text-3xl:  2.5rem;
+    --text-display: 3.4rem;
+
+    /* --- 4pt spacing scale --- */
+    --space-2xs: 4px;
+    --space-xs:  8px;
+    --space-sm:  12px;
+    --space-md:  16px;
+    --space-lg:  24px;
+    --space-xl:  36px;
+    --space-2xl: 56px;
+
+    /* --- radius (pill buttons, rounded cards) --- */
+    --radius-pill: 999px;
+    --radius-card: 16px;
+    --radius-sm:   10px;
+
+    /* --- elevation (soft, warm) --- */
+    --shadow-sm: 0 1px 2px oklch(23% 0.012 62 / 0.06);
+    --shadow-md: 0 4px 16px oklch(23% 0.012 62 / 0.07);
+    --shadow-lg: 0 12px 40px oklch(23% 0.012 62 / 0.10);
+
+    /* --- motion --- */
+    --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+    --ease-in:     cubic-bezier(0.55, 0, 1, 0.45);
+    --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+    --dur-fast: 120ms;
+    --dur-mid:  200ms;
+}

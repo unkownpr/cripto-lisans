@@ -1,0 +1,37 @@
+# --- Dependencies ---
+/vendor/
+/node_modules/
+
+# --- Secrets / environment ---
+/.env
+
+# --- Runtime data (created by the install wizard) ---
+/data/*.sqlite
+/data/*.sqlite-shm
+/data/*.sqlite-wal
+/data/installed.lock
+/data/setup_token.txt
+
+# --- Uploaded product images / favicons (runtime) ---
+/public/assets/products/
+
+# --- Temp ---
+/tmp/*
+!/tmp/.gitkeep
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+
+# --- Local agent tooling (not part of the project) ---
+/.claude/
+/.agents/
+/.hallmark/
+/AGENTS.md
+/skills-lock.json
+/docs/agents/
+
+# --- Smart-contract build artifacts (Foundry) ---
+contracts/out/
+contracts/cache/
+contracts/lib/
